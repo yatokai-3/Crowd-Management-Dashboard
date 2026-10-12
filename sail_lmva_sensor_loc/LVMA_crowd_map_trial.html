@@ -1,0 +1,1308 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_dd5a832653d47149d8d452285c29319f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_dd5a832653d47149d8d452285c29319f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_dd5a832653d47149d8d452285c29319f = L.map(
+                "map_dd5a832653d47149d8d452285c29319f",
+                {
+                    center: [52.37907691666666, 4.903787222222223],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f529c9aeb772af71eb2f9efdc4e9c188 = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Tiles \u00a9 Esri",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_f529c9aeb772af71eb2f9efdc4e9c188.addTo(map_dd5a832653d47149d8d452285c29319f);
+        
+    
+            var circle_marker_fb3e2848329c6735b44dd16c6b74ebff = L.circleMarker(
+                [52.372634, 4.892071],
+                {"bubblingMouseEvents": true, "color": "#000000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0F6CC9", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.614750427607, "stroke": true, "weight": 1.5}
+            ).addTo(map_dd5a832653d47149d8d452285c29319f);
+        
+    
+        var popup_e6edeee415f691a079f2f8856a49e9d8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b04ee672f9b10895c3de9db78f2ca7b1 = $(`<div id="html_b04ee672f9b10895c3de9db78f2ca7b1" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">         <h4>Kalverstraat t.h.v. 1</h4>         <b>Sensor ID:</b> CMSA-GAKH-01<br>         <b>Total pedestrian counts:</b> 256,065<br>         <b>Average flow:</b> 5.31 people/m/min<br>         <b>Effective width:</b> 6.70 m     </div>     </div>`)[0];
+                popup_e6edeee415f691a079f2f8856a49e9d8.setContent(html_b04ee672f9b10895c3de9db78f2ca7b1);
+            
+        
+
+        circle_marker_fb3e2848329c6735b44dd16c6b74ebff.bindPopup(popup_e6edeee415f691a079f2f8856a49e9d8)
+        ;
+
+        
+    
+    
+            circle_marker_fb3e2848329c6735b44dd16c6b74ebff.bindTooltip(
+                `<div>
+                     Kalverstraat t.h.v. 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d05988eb4c44c769ff8cbcd0dd5ec9ac = L.circleMarker(
+                [52.374616, 4.89983],
+                {"bubblingMouseEvents": true, "color": "#000000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0F6CC9", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.91980802586291, "stroke": true, "weight": 1.5}
+            ).addTo(map_dd5a832653d47149d8d452285c29319f);
+        
+    
+        var popup_788ea5ee8ef34aa04df76dfc86e2147d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4050d64c7ddb3fde74b50df075ce62db = $(`<div id="html_4050d64c7ddb3fde74b50df075ce62db" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">         <h4>Korte Niezel</h4>         <b>Sensor ID:</b> CMSA-GAWW-11<br>         <b>Total pedestrian counts:</b> 180,818<br>         <b>Average flow:</b> 7.39 people/m/min<br>         <b>Effective width:</b> 3.40 m     </div>     </div>`)[0];
+                popup_788ea5ee8ef34aa04df76dfc86e2147d.setContent(html_4050d64c7ddb3fde74b50df075ce62db);
+            
+        
+
+        circle_marker_d05988eb4c44c769ff8cbcd0dd5ec9ac.bindPopup(popup_788ea5ee8ef34aa04df76dfc86e2147d)
+        ;
+
+        
+    
+    
+            circle_marker_d05988eb4c44c769ff8cbcd0dd5ec9ac.bindTooltip(
+                `<div>
+                     Korte Niezel
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0b94f1a6831fe77898c553533f9f7aec = L.circleMarker(
+                [52.37386, 4.89869],
+                {"bubblingMouseEvents": true, "color": "#000000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0F6CC9", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.345225176322403, "stroke": true, "weight": 1.5}
+            ).addTo(map_dd5a832653d47149d8d452285c29319f);
+        
+    
+        var popup_6a5e29a92a47cc524ce2e454d1844079 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6e83e17664e3de21ac5ee543b05513f3 = $(`<div id="html_6e83e17664e3de21ac5ee543b05513f3" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">         <h4>Oudekennissteeg</h4>         <b>Sensor ID:</b> CMSA-GAWW-12<br>         <b>Total pedestrian counts:</b> 198,477<br>         <b>Average flow:</b> 10.60 people/m/min<br>         <b>Effective width:</b> 2.60 m     </div>     </div>`)[0];
+                popup_6a5e29a92a47cc524ce2e454d1844079.setContent(html_6e83e17664e3de21ac5ee543b05513f3);
+            
+        
+
+        circle_marker_0b94f1a6831fe77898c553533f9f7aec.bindPopup(popup_6a5e29a92a47cc524ce2e454d1844079)
+        ;
+
+        
+    
+    
+            circle_marker_0b94f1a6831fe77898c553533f9f7aec.bindTooltip(
+                `<div>
+                     Oudekennissteeg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0689e7e42fbc4f65fe007a223bb46cd9 = L.circleMarker(
+                [52.372439, 4.897689],
+                {"bubblingMouseEvents": true, "color": "#000000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0F6CC9", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.877471650633401, "stroke": true, "weight": 1.5}
+            ).addTo(map_dd5a832653d47149d8d452285c29319f);
+        
+    
+        var popup_3e291f4daf9e4850494ec9e01bdaed6a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5ff4b09a419e0ecf870f882c3ef86e28 = $(`<div id="html_5ff4b09a419e0ecf870f882c3ef86e28" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">         <h4>Stoofsteeg</h4>         <b>Sensor ID:</b> CMSA-GAWW-13<br>         <b>Total pedestrian counts:</b> 107,495<br>         <b>Average flow:</b> 6.79 people/m/min<br>         <b>Effective width:</b> 2.20 m     </div>     </div>`)[0];
+                popup_3e291f4daf9e4850494ec9e01bdaed6a.setContent(html_5ff4b09a419e0ecf870f882c3ef86e28);
+            
+        
+
+        circle_marker_0689e7e42fbc4f65fe007a223bb46cd9.bindPopup(popup_3e291f4daf9e4850494ec9e01bdaed6a)
+        ;
+
+        
+    
+    
+            circle_marker_0689e7e42fbc4f65fe007a223bb46cd9.bindTooltip(
+                `<div>
+                     Stoofsteeg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8abe520ef337b10a2b04da6aaa36fb52 = L.circleMarker(
+                [52.373538, 4.898166],
+                {"bubblingMouseEvents": true, "color": "#000000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0F6CC9", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.495223342432588, "stroke": true, "weight": 1.5}
+            ).addTo(map_dd5a832653d47149d8d452285c29319f);
+        
+    
+        var popup_130e38db6c7b2ee3d743319206361fa5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b23fc95a47fd1f1842df33da20d59edb = $(`<div id="html_b23fc95a47fd1f1842df33da20d59edb" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">         <h4>Oudezijds Voorburgwal t.h.v. 91</h4>         <b>Sensor ID:</b> CMSA-GAWW-14<br>         <b>Total pedestrian counts:</b> 68,628<br>         <b>Average flow:</b> 2.65 people/m/min<br>         <b>Effective width:</b> 3.60 m     </div>     </div>`)[0];
+                popup_130e38db6c7b2ee3d743319206361fa5.setContent(html_b23fc95a47fd1f1842df33da20d59edb);
+            
+        
+
+        circle_marker_8abe520ef337b10a2b04da6aaa36fb52.bindPopup(popup_130e38db6c7b2ee3d743319206361fa5)
+        ;
+
+        
+    
+    
+            circle_marker_8abe520ef337b10a2b04da6aaa36fb52.bindTooltip(
+                `<div>
+                     Oudezijds Voorburgwal t.h.v. 91
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bcf7660056f288d09bccb6b9050c9dae = L.circleMarker(
+                [52.372916, 4.898207],
+                {"bubblingMouseEvents": true, "color": "#000000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0F6CC9", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.51310106100018, "stroke": true, "weight": 1.5}
+            ).addTo(map_dd5a832653d47149d8d452285c29319f);
+        
+    
+        var popup_881d9c50d18c0cba4631dcb6380999b3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_869040b944ea7336ce59625385dd0c95 = $(`<div id="html_869040b944ea7336ce59625385dd0c95" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">         <h4>Oudezijds Achterburgwal t.h.v. 86</h4>         <b>Sensor ID:</b> CMSA-GAWW-15<br>         <b>Total pedestrian counts:</b> 128,283<br>         <b>Average flow:</b> 6.36 people/m/min<br>         <b>Effective width:</b> 2.80 m     </div>     </div>`)[0];
+                popup_881d9c50d18c0cba4631dcb6380999b3.setContent(html_869040b944ea7336ce59625385dd0c95);
+            
+        
+
+        circle_marker_bcf7660056f288d09bccb6b9050c9dae.bindPopup(popup_881d9c50d18c0cba4631dcb6380999b3)
+        ;
+
+        
+    
+    
+            circle_marker_bcf7660056f288d09bccb6b9050c9dae.bindTooltip(
+                `<div>
+                     Oudezijds Achterburgwal t.h.v. 86
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_aa346b16ecea8e05b32c58a520c41750 = L.circleMarker(
+                [52.372628, 4.898233],
+                {"bubblingMouseEvents": true, "color": "#000000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0F6CC9", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.71122580264187, "stroke": true, "weight": 1.5}
+            ).addTo(map_dd5a832653d47149d8d452285c29319f);
+        
+    
+        var popup_a360bf98a5f44ccee952bb3a700c3789 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9d7b1318d5a46d45ca51c613fa3d1d31 = $(`<div id="html_9d7b1318d5a46d45ca51c613fa3d1d31" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">         <h4>Oudezijds Achterburgwal t.h.v. 91</h4>         <b>Sensor ID:</b> CMSA-GAWW-16<br>         <b>Total pedestrian counts:</b> 135,138<br>         <b>Average flow:</b> 6.95 people/m/min<br>         <b>Effective width:</b> 2.70 m     </div>     </div>`)[0];
+                popup_a360bf98a5f44ccee952bb3a700c3789.setContent(html_9d7b1318d5a46d45ca51c613fa3d1d31);
+            
+        
+
+        circle_marker_aa346b16ecea8e05b32c58a520c41750.bindPopup(popup_a360bf98a5f44ccee952bb3a700c3789)
+        ;
+
+        
+    
+    
+            circle_marker_aa346b16ecea8e05b32c58a520c41750.bindTooltip(
+                `<div>
+                     Oudezijds Achterburgwal t.h.v. 91
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_263e06fdb8f6c1a49e0eb2500a4c81b3 = L.circleMarker(
+                [52.372782, 4.896649],
+                {"bubblingMouseEvents": true, "color": "#000000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0F6CC9", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.042291133174851, "stroke": true, "weight": 1.5}
+            ).addTo(map_dd5a832653d47149d8d452285c29319f);
+        
+    
+        var popup_5ecaa0083d591a6ea1d41acccdd8eff3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_af629ecc046aec47f7b7f2d8c1a79e7b = $(`<div id="html_af629ecc046aec47f7b7f2d8c1a79e7b" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">         <h4>Oudezijds Voorburgwal t.h.v. 206</h4>         <b>Sensor ID:</b> CMSA-GAWW-17<br>         <b>Total pedestrian counts:</b> 112,709<br>         <b>Average flow:</b> 3.33 people/m/min<br>         <b>Effective width:</b> 4.70 m     </div>     </div>`)[0];
+                popup_5ecaa0083d591a6ea1d41acccdd8eff3.setContent(html_af629ecc046aec47f7b7f2d8c1a79e7b);
+            
+        
+
+        circle_marker_263e06fdb8f6c1a49e0eb2500a4c81b3.bindPopup(popup_5ecaa0083d591a6ea1d41acccdd8eff3)
+        ;
+
+        
+    
+    
+            circle_marker_263e06fdb8f6c1a49e0eb2500a4c81b3.bindTooltip(
+                `<div>
+                     Oudezijds Voorburgwal t.h.v. 206
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dd8c8644027b295d115f7deb43b89d2b = L.circleMarker(
+                [52.373587, 4.899815],
+                {"bubblingMouseEvents": true, "color": "#000000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0F6CC9", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.425620335686105, "stroke": true, "weight": 1.5}
+            ).addTo(map_dd5a832653d47149d8d452285c29319f);
+        
+    
+        var popup_a1b6628c11ece4c7fa13e4debe209681 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_71b9421868ea25e7936fc269554c4ef0 = $(`<div id="html_71b9421868ea25e7936fc269554c4ef0" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">         <h4>Molensteeg</h4>         <b>Sensor ID:</b> CMSA-GAWW-19<br>         <b>Total pedestrian counts:</b> 125,313<br>         <b>Average flow:</b> 6.96 people/m/min<br>         <b>Effective width:</b> 2.50 m     </div>     </div>`)[0];
+                popup_a1b6628c11ece4c7fa13e4debe209681.setContent(html_71b9421868ea25e7936fc269554c4ef0);
+            
+        
+
+        circle_marker_dd8c8644027b295d115f7deb43b89d2b.bindPopup(popup_a1b6628c11ece4c7fa13e4debe209681)
+        ;
+
+        
+    
+    
+            circle_marker_dd8c8644027b295d115f7deb43b89d2b.bindTooltip(
+                `<div>
+                     Molensteeg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ba30099311bb547d304318bbb01c6691 = L.circleMarker(
+                [52.37535, 4.89748],
+                {"bubblingMouseEvents": true, "color": "#000000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0F6CC9", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.186124337270185, "stroke": true, "weight": 1.5}
+            ).addTo(map_dd5a832653d47149d8d452285c29319f);
+        
+    
+        var popup_c2840d755e56b86baed980ae7bfa8ea6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b4f3bc92714fd43915d0fd57c2d444ae = $(`<div id="html_b4f3bc92714fd43915d0fd57c2d444ae" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">         <h4>Oudebrugsteeg </h4>         <b>Sensor ID:</b> CMSA-GAWW-20<br>         <b>Total pedestrian counts:</b> 117,360<br>         <b>Average flow:</b> 3.08 people/m/min<br>         <b>Effective width:</b> 5.30 m     </div>     </div>`)[0];
+                popup_c2840d755e56b86baed980ae7bfa8ea6.setContent(html_b4f3bc92714fd43915d0fd57c2d444ae);
+            
+        
+
+        circle_marker_ba30099311bb547d304318bbb01c6691.bindPopup(popup_c2840d755e56b86baed980ae7bfa8ea6)
+        ;
+
+        
+    
+    
+            circle_marker_ba30099311bb547d304318bbb01c6691.bindTooltip(
+                `<div>
+                     Oudebrugsteeg 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_adda24515514aee69c157244f0a9a24b = L.circleMarker(
+                [52.37193, 4.8956],
+                {"bubblingMouseEvents": true, "color": "#000000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0F6CC9", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.139314379174053, "stroke": true, "weight": 1.5}
+            ).addTo(map_dd5a832653d47149d8d452285c29319f);
+        
+    
+        var popup_1eaaa9b878619087ab0cdd607954378e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_97c5732de34685ce6c0d457f2e9770de = $(`<div id="html_97c5732de34685ce6c0d457f2e9770de" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">         <h4>Damstraat</h4>         <b>Sensor ID:</b> CMSA-GAWW-21<br>         <b>Total pedestrian counts:</b> 281,999<br>         <b>Average flow:</b> 4.21 people/m/min<br>         <b>Effective width:</b> 9.30 m     </div>     </div>`)[0];
+                popup_1eaaa9b878619087ab0cdd607954378e.setContent(html_97c5732de34685ce6c0d457f2e9770de);
+            
+        
+
+        circle_marker_adda24515514aee69c157244f0a9a24b.bindPopup(popup_1eaaa9b878619087ab0cdd607954378e)
+        ;
+
+        
+    
+    
+            circle_marker_adda24515514aee69c157244f0a9a24b.bindTooltip(
+                `<div>
+                     Damstraat
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d4b282a475b10a30c65ec00431dffde2 = L.circleMarker(
+                [52.372764, 4.899829],
+                {"bubblingMouseEvents": true, "color": "#000000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0F6CC9", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.429089442131215, "stroke": true, "weight": 1.5}
+            ).addTo(map_dd5a832653d47149d8d452285c29319f);
+        
+    
+        var popup_0a81525a4193fda6e1c8e7c88c8ea6c9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_dc7e54a57778b987af88c9dfc03d28c2 = $(`<div id="html_dc7e54a57778b987af88c9dfc03d28c2" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">         <h4>Bloedstraat</h4>         <b>Sensor ID:</b> CMSA-GAWW-23<br>         <b>Total pedestrian counts:</b> 44,582<br>         <b>Average flow:</b> 1.17 people/m/min<br>         <b>Effective width:</b> 5.30 m     </div>     </div>`)[0];
+                popup_0a81525a4193fda6e1c8e7c88c8ea6c9.setContent(html_dc7e54a57778b987af88c9dfc03d28c2);
+            
+        
+
+        circle_marker_d4b282a475b10a30c65ec00431dffde2.bindPopup(popup_0a81525a4193fda6e1c8e7c88c8ea6c9)
+        ;
+
+        
+    
+    
+            circle_marker_d4b282a475b10a30c65ec00431dffde2.bindTooltip(
+                `<div>
+                     Bloedstraat
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c2b2477f2b9d092721d686c42430a4e1 = L.circleMarker(
+                [52.377027, 4.898059],
+                {"bubblingMouseEvents": true, "color": "#000000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0F6CC9", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.916802137765423, "stroke": true, "weight": 1.5}
+            ).addTo(map_dd5a832653d47149d8d452285c29319f);
+        
+    
+        var popup_8a4d2d08187a2df1f233597b80462c00 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5a350c4be602b9c7d75b962b32fe12d8 = $(`<div id="html_5a350c4be602b9c7d75b962b32fe12d8" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">         <h4>Damrak 1-5</h4>         <b>Sensor ID:</b> GACM-04<br>         <b>Total pedestrian counts:</b> 322,738<br>         <b>Average flow:</b> 7.23 people/m/min<br>         <b>Effective width:</b> 6.20 m     </div>     </div>`)[0];
+                popup_8a4d2d08187a2df1f233597b80462c00.setContent(html_5a350c4be602b9c7d75b962b32fe12d8);
+            
+        
+
+        circle_marker_c2b2477f2b9d092721d686c42430a4e1.bindPopup(popup_8a4d2d08187a2df1f233597b80462c00)
+        ;
+
+        
+    
+    
+            circle_marker_c2b2477f2b9d092721d686c42430a4e1.bindTooltip(
+                `<div>
+                     Damrak 1-5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8e30511c1ca1cc96fb4767e3c739da44 = L.circleMarker(
+                [52.380686, 4.899041],
+                {"bubblingMouseEvents": true, "color": "#000000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0F6CC9", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.676836528628808, "stroke": true, "weight": 1.5}
+            ).addTo(map_dd5a832653d47149d8d452285c29319f);
+        
+    
+        var popup_54f1ca9063028598409dee24cfc03833 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f2e0679cd914de6528b8300686996b00 = $(`<div id="html_f2e0679cd914de6528b8300686996b00" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">         <h4>CS - ri. NDSM</h4>         <b>Sensor ID:</b> GVCV-01<br>         <b>Total pedestrian counts:</b> 49,709<br>         <b>Average flow:</b> 2.23 people/m/min<br>         <b>Effective width:</b> 3.10 m     </div>     </div>`)[0];
+                popup_54f1ca9063028598409dee24cfc03833.setContent(html_f2e0679cd914de6528b8300686996b00);
+            
+        
+
+        circle_marker_8e30511c1ca1cc96fb4767e3c739da44.bindPopup(popup_54f1ca9063028598409dee24cfc03833)
+        ;
+
+        
+    
+    
+            circle_marker_8e30511c1ca1cc96fb4767e3c739da44.bindTooltip(
+                `<div>
+                     CS - ri. NDSM
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e8eb15774111cb6fee8d5092dc3fd76f = L.circleMarker(
+                [52.380566, 4.89936],
+                {"bubblingMouseEvents": true, "color": "#000000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0F6CC9", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.076821541192064, "stroke": true, "weight": 1.5}
+            ).addTo(map_dd5a832653d47149d8d452285c29319f);
+        
+    
+        var popup_8642ba104aa1b787361e036d30d6b91c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2adb50b0643c1034d1bf04977798b1e2 = $(`<div id="html_2adb50b0643c1034d1bf04977798b1e2" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">         <h4>CS - ri. Buiksloterweg (West)</h4>         <b>Sensor ID:</b> GVCV-03<br>         <b>Total pedestrian counts:</b> 113,817<br>         <b>Average flow:</b> 5.10 people/m/min<br>         <b>Effective width:</b> 3.10 m     </div>     </div>`)[0];
+                popup_8642ba104aa1b787361e036d30d6b91c.setContent(html_2adb50b0643c1034d1bf04977798b1e2);
+            
+        
+
+        circle_marker_e8eb15774111cb6fee8d5092dc3fd76f.bindPopup(popup_8642ba104aa1b787361e036d30d6b91c)
+        ;
+
+        
+    
+    
+            circle_marker_e8eb15774111cb6fee8d5092dc3fd76f.bindTooltip(
+                `<div>
+                     CS - ri. Buiksloterweg (West)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_04d2a8e5085b48b045d1e65cac572d6f = L.circleMarker(
+                [52.380516, 4.899524],
+                {"bubblingMouseEvents": true, "color": "#000000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0F6CC9", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.590519547198038, "stroke": true, "weight": 1.5}
+            ).addTo(map_dd5a832653d47149d8d452285c29319f);
+        
+    
+        var popup_95e9f7e56ff3dfd047e4913b0ae449a9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9f6971bb2476ee91ec622b0c64375e2e = $(`<div id="html_9f6971bb2476ee91ec622b0c64375e2e" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">         <h4>CS - ri. Buiksloterweg (Oost)</h4>         <b>Sensor ID:</b> GVCV-04<br>         <b>Total pedestrian counts:</b> 98,712<br>         <b>Average flow:</b> 4.42 people/m/min<br>         <b>Effective width:</b> 3.10 m     </div>     </div>`)[0];
+                popup_95e9f7e56ff3dfd047e4913b0ae449a9.setContent(html_9f6971bb2476ee91ec622b0c64375e2e);
+            
+        
+
+        circle_marker_04d2a8e5085b48b045d1e65cac572d6f.bindPopup(popup_95e9f7e56ff3dfd047e4913b0ae449a9)
+        ;
+
+        
+    
+    
+            circle_marker_04d2a8e5085b48b045d1e65cac572d6f.bindTooltip(
+                `<div>
+                     CS - ri. Buiksloterweg (Oost)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_18605a6720afc52f49a1af79cbd8a927 = L.circleMarker(
+                [52.378526, 4.905811],
+                {"bubblingMouseEvents": true, "color": "#000000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0F6CC9", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.999191781198352, "stroke": true, "weight": 1.5}
+            ).addTo(map_dd5a832653d47149d8d452285c29319f);
+        
+    
+        var popup_fd5c734e5b3a51fec43159a5229e7b59 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8d84897e22209e0da3e5a4e83a485838 = $(`<div id="html_8d84897e22209e0da3e5a4e83a485838" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">         <h4>CS - ri. IJplein (West)</h4>         <b>Sensor ID:</b> GVCV-05-A<br>         <b>Total pedestrian counts:</b> 81,793<br>         <b>Average flow:</b> 3.66 people/m/min<br>         <b>Effective width:</b> 3.10 m     </div>     </div>`)[0];
+                popup_fd5c734e5b3a51fec43159a5229e7b59.setContent(html_8d84897e22209e0da3e5a4e83a485838);
+            
+        
+
+        circle_marker_18605a6720afc52f49a1af79cbd8a927.bindPopup(popup_fd5c734e5b3a51fec43159a5229e7b59)
+        ;
+
+        
+    
+    
+            circle_marker_18605a6720afc52f49a1af79cbd8a927.bindTooltip(
+                `<div>
+                     CS - ri. IJplein (West)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e8e021452bd4f5d7c07ca54f81e0cc53 = L.circleMarker(
+                [52.378526, 4.905811],
+                {"bubblingMouseEvents": true, "color": "#000000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0F6CC9", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.2458096344108, "stroke": true, "weight": 1.5}
+            ).addTo(map_dd5a832653d47149d8d452285c29319f);
+        
+    
+        var popup_74b1730272c31e491f82ffdfe7c22d90 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7fb9eea8c828b7582a6f485df629a62d = $(`<div id="html_7fb9eea8c828b7582a6f485df629a62d" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">         <h4>CS - ri. IJplein (Oost)</h4>         <b>Sensor ID:</b> GVCV-05-B<br>         <b>Total pedestrian counts:</b> 88,656<br>         <b>Average flow:</b> 3.97 people/m/min<br>         <b>Effective width:</b> 3.10 m     </div>     </div>`)[0];
+                popup_74b1730272c31e491f82ffdfe7c22d90.setContent(html_7fb9eea8c828b7582a6f485df629a62d);
+            
+        
+
+        circle_marker_e8e021452bd4f5d7c07ca54f81e0cc53.bindPopup(popup_74b1730272c31e491f82ffdfe7c22d90)
+        ;
+
+        
+    
+    
+            circle_marker_e8e021452bd4f5d7c07ca54f81e0cc53.bindTooltip(
+                `<div>
+                     CS - ri. IJplein (Oost)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_83b58cdafe9c8f3d120c1e76b8914dbb = L.circleMarker(
+                [52.378101, 4.937281],
+                {"bubblingMouseEvents": true, "color": "#000000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0F6CC9", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.041082415062586, "stroke": true, "weight": 1.5}
+            ).addTo(map_dd5a832653d47149d8d452285c29319f);
+        
+    
+        var popup_f57e35efe4598382f3b91e6fd342a7c1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fa454de14ec7d1ed0f42062981896433 = $(`<div id="html_fa454de14ec7d1ed0f42062981896433" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">         <h4>Azartplein</h4>         <b>Sensor ID:</b> GVCV-06<br>         <b>Total pedestrian counts:</b> 37,113<br>         <b>Average flow:</b> 1.66 people/m/min<br>         <b>Effective width:</b> 3.10 m     </div>     </div>`)[0];
+                popup_f57e35efe4598382f3b91e6fd342a7c1.setContent(html_fa454de14ec7d1ed0f42062981896433);
+            
+        
+
+        circle_marker_83b58cdafe9c8f3d120c1e76b8914dbb.bindPopup(popup_f57e35efe4598382f3b91e6fd342a7c1)
+        ;
+
+        
+    
+    
+            circle_marker_83b58cdafe9c8f3d120c1e76b8914dbb.bindTooltip(
+                `<div>
+                     Azartplein
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_17c230e965919cd2a0428a69d0412604 = L.circleMarker(
+                [52.392143, 4.885861],
+                {"bubblingMouseEvents": true, "color": "#000000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0F6CC9", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.932423402410596, "stroke": true, "weight": 1.5}
+            ).addTo(map_dd5a832653d47149d8d452285c29319f);
+        
+    
+        var popup_1fd67d7aae38bf3b2dccb23bd668b742 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_063a7f80529303fbec0ce3f03f4f0a3f = $(`<div id="html_063a7f80529303fbec0ce3f03f4f0a3f" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">         <h4>Pontsteiger N (ri. NDSM)</h4>         <b>Sensor ID:</b> GVCV-07<br>         <b>Total pedestrian counts:</b> 35,144<br>         <b>Average flow:</b> 1.57 people/m/min<br>         <b>Effective width:</b> 3.10 m     </div>     </div>`)[0];
+                popup_1fd67d7aae38bf3b2dccb23bd668b742.setContent(html_063a7f80529303fbec0ce3f03f4f0a3f);
+            
+        
+
+        circle_marker_17c230e965919cd2a0428a69d0412604.bindPopup(popup_1fd67d7aae38bf3b2dccb23bd668b742)
+        ;
+
+        
+    
+    
+            circle_marker_17c230e965919cd2a0428a69d0412604.bindTooltip(
+                `<div>
+                     Pontsteiger N (ri. NDSM)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_92818a51cbd1f448a27edbad08f2c5fe = L.circleMarker(
+                [52.392029, 4.886005],
+                {"bubblingMouseEvents": true, "color": "#000000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0F6CC9", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.769226331449965, "stroke": true, "weight": 1.5}
+            ).addTo(map_dd5a832653d47149d8d452285c29319f);
+        
+    
+        var popup_3526937e903897edc564c3c37663680d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f1e5a9ceedd037a268d9c3b40fdd686c = $(`<div id="html_f1e5a9ceedd037a268d9c3b40fdd686c" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">         <h4>Pontsteiger Z (ri. Distelweg)</h4>         <b>Sensor ID:</b> GVCV-08<br>         <b>Total pedestrian counts:</b> 17,428<br>         <b>Average flow:</b> 0.78 people/m/min<br>         <b>Effective width:</b> 3.10 m     </div>     </div>`)[0];
+                popup_3526937e903897edc564c3c37663680d.setContent(html_f1e5a9ceedd037a268d9c3b40fdd686c);
+            
+        
+
+        circle_marker_92818a51cbd1f448a27edbad08f2c5fe.bindPopup(popup_3526937e903897edc564c3c37663680d)
+        ;
+
+        
+    
+    
+            circle_marker_92818a51cbd1f448a27edbad08f2c5fe.bindTooltip(
+                `<div>
+                     Pontsteiger Z (ri. Distelweg)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_60701f3c434c4715d0b9ffbf11a1cc22 = L.circleMarker(
+                [52.374414, 4.949579],
+                {"bubblingMouseEvents": true, "color": "#000000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0F6CC9", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.222984101050542, "stroke": true, "weight": 1.5}
+            ).addTo(map_dd5a832653d47149d8d452285c29319f);
+        
+    
+        var popup_95d2d1bb728f20a166c408be10cbd213 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_536ace5e68a8d1b1097027024f7746e1 = $(`<div id="html_536ace5e68a8d1b1097027024f7746e1" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">         <h4>Zeeburg</h4>         <b>Sensor ID:</b> GVCV-09<br>         <b>Total pedestrian counts:</b> 113<br>         <b>Average flow:</b> 0.01 people/m/min<br>         <b>Effective width:</b> 3.10 m     </div>     </div>`)[0];
+                popup_95d2d1bb728f20a166c408be10cbd213.setContent(html_536ace5e68a8d1b1097027024f7746e1);
+            
+        
+
+        circle_marker_60701f3c434c4715d0b9ffbf11a1cc22.bindPopup(popup_95d2d1bb728f20a166c408be10cbd213)
+        ;
+
+        
+    
+    
+            circle_marker_60701f3c434c4715d0b9ffbf11a1cc22.bindTooltip(
+                `<div>
+                     Zeeburg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ab342397dc1d3dc872455bc1cbac88e4 = L.circleMarker(
+                [52.40106, 4.891368],
+                {"bubblingMouseEvents": true, "color": "#000000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0F6CC9", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.763630241056923, "stroke": true, "weight": 1.5}
+            ).addTo(map_dd5a832653d47149d8d452285c29319f);
+        
+    
+        var popup_93850ef49a814e65a905d138d1a09770 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5497f8973775ba0bb4c33316cdf73a8c = $(`<div id="html_5497f8973775ba0bb4c33316cdf73a8c" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">         <h4>NDSMkade</h4>         <b>Sensor ID:</b> GVCV-11<br>         <b>Total pedestrian counts:</b> 136,981<br>         <b>Average flow:</b> 6.14 people/m/min<br>         <b>Effective width:</b> 3.10 m     </div>     </div>`)[0];
+                popup_93850ef49a814e65a905d138d1a09770.setContent(html_5497f8973775ba0bb4c33316cdf73a8c);
+            
+        
+
+        circle_marker_ab342397dc1d3dc872455bc1cbac88e4.bindPopup(popup_93850ef49a814e65a905d138d1a09770)
+        ;
+
+        
+    
+    
+            circle_marker_ab342397dc1d3dc872455bc1cbac88e4.bindTooltip(
+                `<div>
+                     NDSMkade
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6dd8aa1688b25178ee94946441028a93 = L.circleMarker(
+                [52.382352, 4.903016],
+                {"bubblingMouseEvents": true, "color": "#000000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0F6CC9", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.03131850194924, "stroke": true, "weight": 1.5}
+            ).addTo(map_dd5a832653d47149d8d452285c29319f);
+        
+    
+        var popup_febacc5a51685099de8cc3f042a518d3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_00e7a786a546c459d9a2e077c2c32961 = $(`<div id="html_00e7a786a546c459d9a2e077c2c32961" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">         <h4>Buiksloterweg</h4>         <b>Sensor ID:</b> GVCV-13<br>         <b>Total pedestrian counts:</b> 146,590<br>         <b>Average flow:</b> 6.57 people/m/min<br>         <b>Effective width:</b> 3.10 m     </div>     </div>`)[0];
+                popup_febacc5a51685099de8cc3f042a518d3.setContent(html_00e7a786a546c459d9a2e077c2c32961);
+            
+        
+
+        circle_marker_6dd8aa1688b25178ee94946441028a93.bindPopup(popup_febacc5a51685099de8cc3f042a518d3)
+        ;
+
+        
+    
+    
+            circle_marker_6dd8aa1688b25178ee94946441028a93.bindTooltip(
+                `<div>
+                     Buiksloterweg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_00668ccba97915c596df0e0244ba94b1 = L.circleMarker(
+                [52.382169, 4.903385],
+                {"bubblingMouseEvents": true, "color": "#000000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0F6CC9", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.632912590131884, "stroke": true, "weight": 1.5}
+            ).addTo(map_dd5a832653d47149d8d452285c29319f);
+        
+    
+        var popup_eb294856f30df58d1547d10a354c4a5c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3101f1f8d0e96e5da9ef9a45b48cab81 = $(`<div id="html_3101f1f8d0e96e5da9ef9a45b48cab81" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">         <h4>Buiksloterweg</h4>         <b>Sensor ID:</b> GVCV-14<br>         <b>Total pedestrian counts:</b> 99,986<br>         <b>Average flow:</b> 4.48 people/m/min<br>         <b>Effective width:</b> 3.10 m     </div>     </div>`)[0];
+                popup_eb294856f30df58d1547d10a354c4a5c.setContent(html_3101f1f8d0e96e5da9ef9a45b48cab81);
+            
+        
+
+        circle_marker_00668ccba97915c596df0e0244ba94b1.bindPopup(popup_eb294856f30df58d1547d10a354c4a5c)
+        ;
+
+        
+    
+    
+            circle_marker_00668ccba97915c596df0e0244ba94b1.bindTooltip(
+                `<div>
+                     Buiksloterweg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_143097175e4876ba62b2f48dba98eea1 = L.circleMarker(
+                [52.37802, 4.93715],
+                {"bubblingMouseEvents": true, "color": "#000000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0F6CC9", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.896135715728809, "stroke": true, "weight": 1.5}
+            ).addTo(map_dd5a832653d47149d8d452285c29319f);
+        
+    
+        var popup_5d220ce51a3e8e1a074e17876c1e0cb3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b58beaf05b90d668ce8e35a2d94be91a = $(`<div id="html_b58beaf05b90d668ce8e35a2d94be91a" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">         <h4>Azartplein B</h4>         <b>Sensor ID:</b> GASA-06<br>         <b>Total pedestrian counts:</b> 19,062<br>         <b>Average flow:</b> 0.85 people/m/min<br>         <b>Effective width:</b> 3.10 m     </div>     </div>`)[0];
+                popup_5d220ce51a3e8e1a074e17876c1e0cb3.setContent(html_b58beaf05b90d668ce8e35a2d94be91a);
+            
+        
+
+        circle_marker_143097175e4876ba62b2f48dba98eea1.bindPopup(popup_5d220ce51a3e8e1a074e17876c1e0cb3)
+        ;
+
+        
+    
+    
+            circle_marker_143097175e4876ba62b2f48dba98eea1.bindTooltip(
+                `<div>
+                     Azartplein B
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_15707ecb36736483f7b7a0b4f7040acb = L.circleMarker(
+                [52.38045, 4.90031],
+                {"bubblingMouseEvents": true, "color": "#000000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0F6CC9", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.605159537712426, "stroke": true, "weight": 1.5}
+            ).addTo(map_dd5a832653d47149d8d452285c29319f);
+        
+    
+        var popup_4a93ef7bb1aa8c97bb81cb56c3f0ed3f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9743fe11fee89eddecae9689be5fd39a = $(`<div id="html_9743fe11fee89eddecae9689be5fd39a" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">         <h4>IJBoulevardA1</h4>         <b>Sensor ID:</b> GASA-01-A1<br>         <b>Total pedestrian counts:</b> 48,197<br>         <b>Average flow:</b> 1.67 people/m/min<br>         <b>Effective width:</b> 4.00 m     </div>     </div>`)[0];
+                popup_4a93ef7bb1aa8c97bb81cb56c3f0ed3f.setContent(html_9743fe11fee89eddecae9689be5fd39a);
+            
+        
+
+        circle_marker_15707ecb36736483f7b7a0b4f7040acb.bindPopup(popup_4a93ef7bb1aa8c97bb81cb56c3f0ed3f)
+        ;
+
+        
+    
+    
+            circle_marker_15707ecb36736483f7b7a0b4f7040acb.bindTooltip(
+                `<div>
+                     IJBoulevardA1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dd5eeb84f7a47b72858b26dda3b080d0 = L.circleMarker(
+                [52.38042, 4.90028],
+                {"bubblingMouseEvents": true, "color": "#000000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0F6CC9", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.284607146574785, "stroke": true, "weight": 1.5}
+            ).addTo(map_dd5a832653d47149d8d452285c29319f);
+        
+    
+        var popup_1f0f488044cf350afa7f652b335917c4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_14a9ef7f719737f33f6940734a8f7b9c = $(`<div id="html_14a9ef7f719737f33f6940734a8f7b9c" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">         <h4>IJBoulevardA2</h4>         <b>Sensor ID:</b> GASA-01-A2<br>         <b>Total pedestrian counts:</b> 155,982<br>         <b>Average flow:</b> 5.42 people/m/min<br>         <b>Effective width:</b> 4.00 m     </div>     </div>`)[0];
+                popup_1f0f488044cf350afa7f652b335917c4.setContent(html_14a9ef7f719737f33f6940734a8f7b9c);
+            
+        
+
+        circle_marker_dd5eeb84f7a47b72858b26dda3b080d0.bindPopup(popup_1f0f488044cf350afa7f652b335917c4)
+        ;
+
+        
+    
+    
+            circle_marker_dd5eeb84f7a47b72858b26dda3b080d0.bindTooltip(
+                `<div>
+                     IJBoulevardA2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a461fce04141002a5c24e1b1a93884c6 = L.circleMarker(
+                [52.38034, 4.89992],
+                {"bubblingMouseEvents": true, "color": "#000000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0F6CC9", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.085396798299662, "stroke": true, "weight": 1.5}
+            ).addTo(map_dd5a832653d47149d8d452285c29319f);
+        
+    
+        var popup_9c5fdc4ff7c2ad519643a4db00e9fb17 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_061809b987fd0f863114f39958420194 = $(`<div id="html_061809b987fd0f863114f39958420194" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">         <h4>IJBoulevardB</h4>         <b>Sensor ID:</b> GASA-01-B<br>         <b>Total pedestrian counts:</b> 114,093<br>         <b>Average flow:</b> 2.64 people/m/min<br>         <b>Effective width:</b> 6.00 m     </div>     </div>`)[0];
+                popup_9c5fdc4ff7c2ad519643a4db00e9fb17.setContent(html_061809b987fd0f863114f39958420194);
+            
+        
+
+        circle_marker_a461fce04141002a5c24e1b1a93884c6.bindPopup(popup_9c5fdc4ff7c2ad519643a4db00e9fb17)
+        ;
+
+        
+    
+    
+            circle_marker_a461fce04141002a5c24e1b1a93884c6.bindTooltip(
+                `<div>
+                     IJBoulevardB
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_744e32a6884183f74edd12d59e60056f = L.circleMarker(
+                [52.38028, 4.89985],
+                {"bubblingMouseEvents": true, "color": "#000000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0F6CC9", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.20385669829475, "stroke": true, "weight": 1.5}
+            ).addTo(map_dd5a832653d47149d8d452285c29319f);
+        
+    
+        var popup_369b4318e83a6491185606657c333133 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4355b85c10a2f6dd9ae42c842caa7cd3 = $(`<div id="html_4355b85c10a2f6dd9ae42c842caa7cd3" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">         <h4>IJBoulevardC</h4>         <b>Sensor ID:</b> GASA-01-C<br>         <b>Total pedestrian counts:</b> 87,469<br>         <b>Average flow:</b> 2.02 people/m/min<br>         <b>Effective width:</b> 6.00 m     </div>     </div>`)[0];
+                popup_369b4318e83a6491185606657c333133.setContent(html_4355b85c10a2f6dd9ae42c842caa7cd3);
+            
+        
+
+        circle_marker_744e32a6884183f74edd12d59e60056f.bindPopup(popup_369b4318e83a6491185606657c333133)
+        ;
+
+        
+    
+    
+            circle_marker_744e32a6884183f74edd12d59e60056f.bindTooltip(
+                `<div>
+                     IJBoulevardC
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_964dfd3c41e6d2985f68c2c915a12507 = L.circleMarker(
+                [52.37864, 4.90472],
+                {"bubblingMouseEvents": true, "color": "#000000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0F6CC9", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.806868402767728, "stroke": true, "weight": 1.5}
+            ).addTo(map_dd5a832653d47149d8d452285c29319f);
+        
+    
+        var popup_f147c4deaf1d99e6cbbedb859cc9b87f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a3c9b163f04ec50c8bd1b85a223846cd = $(`<div id="html_a3c9b163f04ec50c8bd1b85a223846cd" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">         <h4>BrugOostertoegang1</h4>         <b>Sensor ID:</b> GASA-02-01<br>         <b>Total pedestrian counts:</b> 265,418<br>         <b>Average flow:</b> 6.14 people/m/min<br>         <b>Effective width:</b> 6.00 m     </div>     </div>`)[0];
+                popup_f147c4deaf1d99e6cbbedb859cc9b87f.setContent(html_a3c9b163f04ec50c8bd1b85a223846cd);
+            
+        
+
+        circle_marker_964dfd3c41e6d2985f68c2c915a12507.bindPopup(popup_f147c4deaf1d99e6cbbedb859cc9b87f)
+        ;
+
+        
+    
+    
+            circle_marker_964dfd3c41e6d2985f68c2c915a12507.bindTooltip(
+                `<div>
+                     BrugOostertoegang1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d3184b793a459f10cd0f098a1e4fb4bf = L.circleMarker(
+                [52.37858, 4.90466],
+                {"bubblingMouseEvents": true, "color": "#000000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0F6CC9", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.29016355659344, "stroke": true, "weight": 1.5}
+            ).addTo(map_dd5a832653d47149d8d452285c29319f);
+        
+    
+        var popup_e21bbd892d777f9d7f8a5f3dc6430343 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8608cbec14efe1b9d72846c59694b8bd = $(`<div id="html_8608cbec14efe1b9d72846c59694b8bd" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">         <h4>BrugOostertoegang2</h4>         <b>Sensor ID:</b> GASA-02-02<br>         <b>Total pedestrian counts:</b> 343,278<br>         <b>Average flow:</b> 7.95 people/m/min<br>         <b>Effective width:</b> 6.00 m     </div>     </div>`)[0];
+                popup_e21bbd892d777f9d7f8a5f3dc6430343.setContent(html_8608cbec14efe1b9d72846c59694b8bd);
+            
+        
+
+        circle_marker_d3184b793a459f10cd0f098a1e4fb4bf.bindPopup(popup_e21bbd892d777f9d7f8a5f3dc6430343)
+        ;
+
+        
+    
+    
+            circle_marker_d3184b793a459f10cd0f098a1e4fb4bf.bindTooltip(
+                `<div>
+                     BrugOostertoegang2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0ed586f811abc15513403175dacd7aba = L.circleMarker(
+                [52.37762, 4.91101],
+                {"bubblingMouseEvents": true, "color": "#000000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0F6CC9", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_dd5a832653d47149d8d452285c29319f);
+        
+    
+        var popup_e343ab167c9d20b9a93c3032a5f77c89 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1b3b89ad0a7eca5bb877e7a7fcecd941 = $(`<div id="html_1b3b89ad0a7eca5bb877e7a7fcecd941" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">         <h4>Oosterdoksbrug</h4>         <b>Sensor ID:</b> GASA-03<br>         <b>Total pedestrian counts:</b> 511,344<br>         <b>Average flow:</b> 8.88 people/m/min<br>         <b>Effective width:</b> 8.00 m     </div>     </div>`)[0];
+                popup_e343ab167c9d20b9a93c3032a5f77c89.setContent(html_1b3b89ad0a7eca5bb877e7a7fcecd941);
+            
+        
+
+        circle_marker_0ed586f811abc15513403175dacd7aba.bindPopup(popup_e343ab167c9d20b9a93c3032a5f77c89)
+        ;
+
+        
+    
+    
+            circle_marker_0ed586f811abc15513403175dacd7aba.bindTooltip(
+                `<div>
+                     Oosterdoksbrug
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d5928ed7aa66c213ceb38d87bd902d6f = L.circleMarker(
+                [52.37702, 4.90352],
+                {"bubblingMouseEvents": true, "color": "#000000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0F6CC9", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.016159950815638, "stroke": true, "weight": 1.5}
+            ).addTo(map_dd5a832653d47149d8d452285c29319f);
+        
+    
+        var popup_efbbc4caefb2de3f8e8b889c8ac309a1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0c5848c17199d95c3b95c4c06aa95a25 = $(`<div id="html_0c5848c17199d95c3b95c4c06aa95a25" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">         <h4>CSriOosterdokskade</h4>         <b>Sensor ID:</b> GASA-04<br>         <b>Total pedestrian counts:</b> 275,798<br>         <b>Average flow:</b> 5.47 people/m/min<br>         <b>Effective width:</b> 7.00 m     </div>     </div>`)[0];
+                popup_efbbc4caefb2de3f8e8b889c8ac309a1.setContent(html_0c5848c17199d95c3b95c4c06aa95a25);
+            
+        
+
+        circle_marker_d5928ed7aa66c213ceb38d87bd902d6f.bindPopup(popup_efbbc4caefb2de3f8e8b889c8ac309a1)
+        ;
+
+        
+    
+    
+            circle_marker_d5928ed7aa66c213ceb38d87bd902d6f.bindTooltip(
+                `<div>
+                     CSriOosterdokskade
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f15cef0b6597b647db2e4deeaad90923 = L.circleMarker(
+                [52.38898, 4.91963],
+                {"bubblingMouseEvents": true, "color": "#000000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0F6CC9", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.916845810739957, "stroke": true, "weight": 1.5}
+            ).addTo(map_dd5a832653d47149d8d452285c29319f);
+        
+    
+        var popup_6981932a965aae44b2e7fd79be3e551b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_eb76fd78219fc71f69a10e99c8b558a5 = $(`<div id="html_eb76fd78219fc71f69a10e99c8b558a5" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">         <h4>NoorderparkOost</h4>         <b>Sensor ID:</b> GASA-05-O<br>         <b>Total pedestrian counts:</b> 79,563<br>         <b>Average flow:</b> 2.76 people/m/min<br>         <b>Effective width:</b> 4.00 m     </div>     </div>`)[0];
+                popup_6981932a965aae44b2e7fd79be3e551b.setContent(html_eb76fd78219fc71f69a10e99c8b558a5);
+            
+        
+
+        circle_marker_f15cef0b6597b647db2e4deeaad90923.bindPopup(popup_6981932a965aae44b2e7fd79be3e551b)
+        ;
+
+        
+    
+    
+            circle_marker_f15cef0b6597b647db2e4deeaad90923.bindTooltip(
+                `<div>
+                     NoorderparkOost
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f624597427cf78ba3b97e266a9f5881f = L.circleMarker(
+                [52.38926, 4.91893],
+                {"bubblingMouseEvents": true, "color": "#000000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0F6CC9", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.678147415147816, "stroke": true, "weight": 1.5}
+            ).addTo(map_dd5a832653d47149d8d452285c29319f);
+        
+    
+        var popup_2ea909c9735c177c78282a246319c970 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_21e3204c9e7e8f4cbe9b78e30933317a = $(`<div id="html_21e3204c9e7e8f4cbe9b78e30933317a" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">         <h4>NoorderparkWest</h4>         <b>Sensor ID:</b> GASA-05-W<br>         <b>Total pedestrian counts:</b> 73,273<br>         <b>Average flow:</b> 2.54 people/m/min<br>         <b>Effective width:</b> 4.00 m     </div>     </div>`)[0];
+                popup_2ea909c9735c177c78282a246319c970.setContent(html_21e3204c9e7e8f4cbe9b78e30933317a);
+            
+        
+
+        circle_marker_f624597427cf78ba3b97e266a9f5881f.bindPopup(popup_2ea909c9735c177c78282a246319c970)
+        ;
+
+        
+    
+    
+            circle_marker_f624597427cf78ba3b97e266a9f5881f.bindTooltip(
+                `<div>
+                     NoorderparkWest
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var layer_control_4f856fd3f29de5f5a0bbe8967b5355e2_layers = {
+                base_layers : {
+                    "Esri World Street Map" : tile_layer_f529c9aeb772af71eb2f9efdc4e9c188,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_4f856fd3f29de5f5a0bbe8967b5355e2 = L.control.layers(
+                layer_control_4f856fd3f29de5f5a0bbe8967b5355e2_layers.base_layers,
+                layer_control_4f856fd3f29de5f5a0bbe8967b5355e2_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_dd5a832653d47149d8d452285c29319f);
+
+        
+</script>
+</html>
